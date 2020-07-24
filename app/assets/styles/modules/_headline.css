@@ -1,0 +1,47 @@
+.headline{
+    font-weight: 300;
+    font-size: 2rem;
+    color: $mainBlue;
+
+    @mixin for-tablet-portrait-up{
+        font-size: 2.9rem;
+    }
+
+    &--centered{
+        text-align: center;
+    }
+
+    &--orange{
+        color: $mainOrange;
+    }
+
+    &--small{
+        font-size: 1.2rem;
+
+        @mixin for-tablet-portrait-up{
+            font-size: 1.75rem;
+        }
+    }
+
+    &--narrow{
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &--light{
+        font-weight: 100;
+    }
+
+    &--margin-b-small{
+        margin-bottom: 0.5em;
+    }
+
+    &--margin-b-large{
+        margin-bottom: 1.6em;
+    }
+
+    &--margin-no-t{
+        margin-top: 0;
+    }
+}
